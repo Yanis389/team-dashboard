@@ -1,18 +1,31 @@
 import React from 'react';
 import { Team, Member } from '../types';
+import './TeamCard.css';
 
 interface TeamCardProps {
   team: Team;
   allMembers: Member[];
+  openModal?: (team: Team) => void; // optionnel
 }
 
-const TeamCard: React.FC<TeamCardProps> = ({ team, allMembers }) => {
+const TeamCard: React.FC<TeamCardProps> = ({ team, allMembers, openModal }) => {
   const assignedMembers = allMembers.filter(member =>
     team.assignedMemberIds.includes(member.id)
   );
 
   return (
-    <div className="card shadow-sm mb-3">
+    <div
+      className="card shadow-sm mb-3"
+      style={{ cursor: openModal ? 'pointer' : 'default' }}
+      onClick={() => openModal && openModal(team)}
+      role={openModal ? 'button' : undefined}
+      tabIndex={openModal ? 0 : undefined}
+      onKeyDown={e => {
+        if (openModal && (e.key === 'Enter' || e.key === ' ')) {
+          openModal(team);
+        }
+      }}
+    >
       <div className="card-body">
         <h3 className="card-title text-primary">{team.title}</h3>
         <p className="card-text text-secondary">{team.body}</p>

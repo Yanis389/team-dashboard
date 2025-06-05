@@ -1,0 +1,66 @@
+/* styles.css */
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1e3a8a;
+  }
+  
+  /* Style du modal Bootstrap */
+  .modal-content {
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(42, 93, 159, 0.2);
+  }
+  
+  /* Bouton close personnalisée */
+  .btn-close {
+    cursor: pointer;
+  }
+  
+  /* Hover bouton affecter */
+  .btn-primary:hover:enabled {
+    background-color: #204d8f;
+    border-color: #204d8f;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Texte disabled */
+  .btn-primary:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+  }
+  
+  /* Pagination personnalisée */
+  .page-link {
+    font-weight: 600;
+    color: #2a5d9f;
+    cursor: pointer;
+  }
+  
+  .page-link:disabled,
+  .page-item.disabled .page-link {
+    color: #a0a8bf;
+    cursor: default;
+    background-color: transparent;
+    border-color: transparent;
+  }
+  
+  .page-link:hover:not(:disabled) {
+    background-color: #2a5d9f;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  /* Card style */
+  .card {
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(42, 93, 159, 0.1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 24px rgba(42, 93, 159, 0.3);
+  }
+  

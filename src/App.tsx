@@ -1,11 +1,19 @@
-import React from 'react';
-import { TeamsProvider } from './contexts/TeamsContext';
-import TeamsDashboard from './pages/TeamsDashboard';
+// src/App.tsx
 
-const App = () => {
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { TeamsProvider } from './contexts/TeamsContext';
+import TeamManagementPage from './pages/TeamManagementPage';
+
+const App: React.FC = () => {
   return (
     <TeamsProvider>
-      <TeamsDashboard />
+      <Router>
+        <Routes>
+          <Route path="/teams" element={<TeamManagementPage />} />
+          {/* Autres routes */}
+        </Routes>
+      </Router>
     </TeamsProvider>
   );
 };
