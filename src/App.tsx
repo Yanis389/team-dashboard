@@ -9,7 +9,6 @@ const App: React.FC = () => {
       <Router>
         <Routes>
           <Route path="/teams" element={<TeamManagementPage />} />
-          {/* Autres routes */}
         </Routes>
       </Router>
     </TeamsProvider>
