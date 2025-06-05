@@ -1,0 +1,49 @@
+/* Amélioration de l’apparence globale */
+body {
+    background-color: #f8f9fa; /* gris très clair */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1e3a8a;
+  }
+  
+  /* Hover sur les boutons tri */
+  .btn-outline-primary:hover {
+    background-color: #2a5d9f;
+    color: white;
+    border-color: #2a5d9f;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Style des cartes - tu peux adapter ou ajouter dans TeamCard */
+  .teams-list .card {
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(42, 93, 159, 0.1);
+  }
+  
+  .teams-list .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 24px rgba(42, 93, 159, 0.3);
+  }
+  
+  /* Pagination */
+  .page-link {
+    font-weight: 600;
+    color: #2a5d9f;
+    cursor: pointer;
+  }
+  
+  .page-link:disabled,
+  .page-item.disabled .page-link {
+    color: #a0a8bf;
+    cursor: default;
+    background-color: transparent;
+    border-color: transparent;
+  }
+  
+  .page-link:hover:not(:disabled) {
+    background-color: #2a5d9f;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  

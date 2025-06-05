@@ -1,0 +1,55 @@
+.team-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px 28px;
+    margin: 16px 0;
+    max-width: 480px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .team-card:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  }
+  
+  .team-card-title {
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    color: #2a6ebb; /* bleu modéré pour harmonie */
+  }
+  
+  .team-card-body {
+    font-size: 1rem;
+    margin-bottom: 16px;
+    color: #555;
+    line-height: 1.4;
+  }
+  
+  .team-member-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  .team-member-item {
+    margin-bottom: 6px;
+  }
+  
+  .team-member-email {
+    color: #666;
+    font-size: 0.9rem;
+    margin-left: 6px;
+    font-style: italic;
+  }
+  
+  .team-member-empty {
+    color: #999;
+    font-style: italic;
+    font-size: 0.95rem;
+  }
+  
